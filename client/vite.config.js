@@ -3,11 +3,12 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/NEWS-AGGREGATOR/',
-  server: {
+  base: '/MernFullStack_Project_News-Aggregator/',
+
+server: {
     port: 3000,
     proxy: {
-      '/api': 'http://localhost:5000', // your backend runs on port 5000
+      '/api': 'http://localhost:5000',
     },
   },
   build: {
