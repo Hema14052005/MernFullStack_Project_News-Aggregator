@@ -9,6 +9,8 @@ const router = express.Router();
 
 // GNews API key from .env file
 const GNEWS_API_KEY = process.env.GNEWS_API_KEY;
+console.log("🔑 GNEWS KEY FROM ENV:", GNEWS_API_KEY);
+
 
 router.get('/', async (req, res) => {
   const { q, category, lang = 'en', max = 10 } = req.query;
